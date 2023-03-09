@@ -31,7 +31,8 @@ export default function Sidebar() {
                 Users
               </li>
             </Link> 
-            <Link to="/notes" className="link">
+            
+            <Link to="/note" className="link">
               <li className="sidebarListItem">
                 <PermIdentity className="sidebarIcon" />
                 Notes

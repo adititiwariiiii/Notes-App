@@ -10,6 +10,7 @@ import { nanoid } from 'nanoid';
 import NotesList from './pages/note/NotesList';
 import { useState, useEffect } from 'react';
 import Note from './pages/note/Note';
+import AddNote from './pages/note/AddNote';
 
 
 function App() {
@@ -31,7 +32,6 @@ function App() {
 		},
 	]);
 
-	const [searchText, setSearchText] = useState('');
 
 	useEffect(() => {
 		const savedNotes = JSON.parse(
@@ -81,10 +81,6 @@ function App() {
             <UserList />
           </Route>
 
-		  <Route path="/notes">
-            <Note />
-          </Route>
-
           <Route path="/user/:userId">
             <User />
           </Route>
@@ -93,14 +89,14 @@ function App() {
             <NewUser />
           </Route>
 		  
+		  <Route path="/note">
+            <AddNote/>
+          </Route>
+		  
         </Switch>
-        
+
       </div>
     </Router>
-
-	
-
-
 
   );
 }

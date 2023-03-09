@@ -1,6 +1,7 @@
 .Note {
     flex: 4;
     padding: 20px;
+	align-items: center;
   }
   
   .userTitleContainer {
@@ -58,6 +59,7 @@ textarea:focus {
 	justify-content: space-between;
 	white-space: pre-wrap;
 }
+
 
 .note-footer {
 	display: flex;
