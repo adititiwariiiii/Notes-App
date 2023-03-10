@@ -1,15 +1,11 @@
-.Note {
-    flex: 4;
-    padding: 20px;
-	align-items: center;
-  }
-  
-  .userTitleContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
+.container {
+	max-width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	min-height: 100vh;
+}
 
 .notes-list {
 	display: grid;
@@ -21,20 +17,17 @@
 }
 
 .note.new {
-	background-color: whitesmoke;
+	background-color: rgb(199, 199, 251);;
 }
 
 textarea {
-	border-radius: 10px;
-    border-color: transparent;
+	border: none;
 	resize: none;
-	background-color:   rgb(199, 199, 251);
-
+	background-color: rgb(199, 199, 251);
 }
 
 textarea:focus {
 	outline: none;
-
 }
 
 .save {
@@ -50,7 +43,7 @@ textarea:focus {
 }
 
 .note {
-	background-color: rgb(227, 227, 253);
+	background-color: rgb(227, 227, 253);;
 	border-radius: 10px;
 	padding: 1rem;
 	min-height: 170px;
@@ -58,8 +51,9 @@ textarea:focus {
 	flex-direction: column;
 	justify-content: space-between;
 	white-space: pre-wrap;
-}
+		flex: 4;
 
+}
 
 .note-footer {
 	display: flex;
@@ -70,3 +64,4 @@ textarea:focus {
 .delete-icon {
 	cursor: pointer;
 }
+

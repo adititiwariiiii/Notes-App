@@ -1,4 +1,5 @@
 import { MdDeleteForever } from 'react-icons/md';
+import './Note.css';
 
 const Note = ({ id, text, date, handleDeleteNote }) => {
 	return (
@@ -12,7 +13,6 @@ const Note = ({ id, text, date, handleDeleteNote }) => {
 					size='1.3em'
 				/>
 			</div>
-			
 		</div>
 	);
 };

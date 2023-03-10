@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import './Note.css';
-import { Link } from 'react-router-dom';
-import './NotesList';
 
-const Note = ({ handleAddNote }) => {
+
+const AddNote = ({ handleAddNote }) => {
 	const [noteText, setNoteText] = useState('');
-	const characterLimit = 1000;
+	const characterLimit = 200;
 
 	const handleChange = (event) => {
 		if (characterLimit - event.target.value.length >= 0) {
@@ -25,7 +23,7 @@ const Note = ({ handleAddNote }) => {
 			<textarea
 				rows='8'
 				cols='10'
-				placeholder='Type to add a note...'
+				placeholder='Type..'
 				value={noteText}
 				onChange={handleChange}
 			></textarea>
@@ -36,11 +34,9 @@ const Note = ({ handleAddNote }) => {
 				<button className='save' onClick={handleSaveClick}>
 					Save
 				</button>
-			</div>	
-		
-
+			</div>
 		</div>
 	);
 };
 
-export default Note;
+export default AddNote;
